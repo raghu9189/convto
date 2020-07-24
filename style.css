@@ -1,0 +1,25 @@
+input{
+	border-radius: 7px;
+	border: 2px solid #5755D9;
+}
+#box-model{
+	padding-top: 25px;
+}
+#result-model{
+	padding-top: 10px;
+}
+#title-model{
+	font-size: 18px;
+}
+#footer
+{
+    clear: both;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

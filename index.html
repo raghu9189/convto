@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Quick Convert" content="Binary to Decimar">
+  <title>ConvTo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="css/spectre.min.css">
+  <link rel="stylesheet" href="css/spectre-exp.min.css">
+  <link rel="stylesheet" href="css/spectre-icons.min.css">
+  <script src="angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-cloak class="ng-cloak">
+<ul class="tab tab-block">
+  <li class="tab-item active">
+    <a href="index.html">Decimal To</a>
+  </li>
+  <li class="tab-item">
+    <a href="Binary.html">Binary To</a>
+  </li>
+  <li class="tab-item">
+    <a href="Octal.html">Octal To</a>
+  </li>
+  <li class="tab-item">
+    <a href="Hexa.html">Hexa To</a>
+  </li>
+</ul>
+<div  ng-controller="myCtrl">
+<center>
+<h3> Type a Decimal number <small class="label">Ex: 18</small></h3>
+<input type="text" ng-model="input_number" type="number" placeholder="Type.."><br>
+</center>
+<div id="box-model">
+<center>
+<span id="title-model" class="label label-rounded secondary label">To Binary &#128071</span><br>
+<div id="result-model">
+<span class="label label-rounded label-primary">{{result_binary()}}</span><br>
+</div>
+</center>
+</div>
+<div id="box-model">
+<center>
+<span id="title-model" class="label label-rounded secondary label">To Octal &#128071</span><br>
+<div id="result-model">
+<span class="label label-rounded label-primary">{{result_octal()}}</span><br>
+</div>
+</center>
+</div>
+<div id="box-model">
+<center>
+<span id="title-model" class="label label-rounded secondary label">To Hexadecimal &#128071</span><br>
+<div id="result-model">
+<span class="label label-rounded label-primary">{{result_hexa()}}</span><br>
+</div>
+<br><br>
+</center>
+</div>
+</div>
+<script src="run.js"></script>
+<div class="footer" id="footer">
+<center>
+<footer>
+<div class="docs-footer container grid-lg" id="copyright">
+            <p><a href="https://github.com/raghu9189" target="_blank">GitHub</a> · <a href="https://twitter.com/raghu_ballu9/" target="_blank">Twitter</a> . <a href="https://instagram.com/raghu.ballu/" target="_blank">Instagram</a> </p>
+            <p>Designed and built with <span class="text-error">♥</span> by <a href="https://twitter.com/raghu_ballu9/" target="_blank">Raghu Ballu</a></p>
+          </div>
+</footer>
+</center>
+</div>
+</body>
+</html>
